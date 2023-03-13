@@ -4,7 +4,7 @@
  * @Date: 2023-03-13 15:38:29
  */
 module.exports = {
-    base:'/blog/',
+    base:'./',
     title: 'VuePress 教程',
     description: 'VuePress 搭建静态博客教程',
     themeConfig: {
