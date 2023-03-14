@@ -1,10 +1,3 @@
-#!/usr/bin/env sh
-###
- # @Description: 1
- # @Author: ligang
- # @Date: 2023-03-14 16:55:48
-### 
-
 # 确保脚本抛出遇到的错误
 set -e
 
@@ -30,4 +23,4 @@ git init
 git add -A
 git commit -m 'deploy'
 
-git push -f git@github.com:ligangli/blog.git master:main
+git push -f git@github.com:ligangli/blog.git master:master
