@@ -21,7 +21,7 @@ git add -A
 git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:ligangli/blog.git main:gh-pages
+git push -f git@github.com:ligangli/blog.git master:gh-pages
 
 
 cd -
@@ -30,4 +30,4 @@ git init
 git add -A
 git commit -m 'deploy'
 
-git push -f git@github.com:ligangli/blog.git main:main
+git push -f git@github.com:ligangli/blog.git master:main
