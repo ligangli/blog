@@ -11,10 +11,10 @@ module.exports = {
         nav: [
             { text: '首页', link: '/' },
             { 
-                text: 'Nonoas 博客', 
+                text: 'Lee博客', 
                 items: [
-                    { text: 'Github', link: 'https://github.com/Nonoas' },
-                    { text: 'CSDN', link: 'https://blog.csdn.net/weixin_44155115' }
+                    { text: 'Github', link: 'https://github.com/ligangli' },
+                    { text: 'CSDN', link: '' }
                 ]
             }
         ],
@@ -29,12 +29,12 @@ module.exports = {
                 ]
             },
             {
-                title: "文章导航",
+                title: "uniapp",
                 path: '/note/javaPlugin', // 默认激活的选项
                 collapsable: false, // 不折叠
                 children: [
-                    { title: "java插件开发", path: "/note/javaPlugin" },
-                    { title: "nvm安装教程", path: "/note/nvmInstall" }
+                    { title: "工程", path: "/note/javaPlugin" },
+                   
                 ],
             }
         ]
