@@ -7,12 +7,12 @@ const geometry  = new THREE.BoxGeometry(20,20,20)
 const material = new THREE.MeshBasicMaterial({
     color: '0xff0000'
 })
-## 物体:网格模型mesh
+物体:网格模型mesh
 const mesh = new THREE.Mesh(geometry,material)
-## 模型位置 
+模型位置 
 设置网格模型在三维空间中的位置坐标，默认是坐标原点
 mesh.position.set(100,10,0)
-## add 把网格模型mesh添加到三维场景scene中
+add 把网格模型mesh添加到三维场景scene中
 scene.add(mesh)
 
 ## 二:相机
@@ -33,16 +33,16 @@ far	    相机视锥体远裁截面相对相机距离，far-near构成了视锥�
 
 const camera = new THREE.PerspectiveCamera(30,width/height,1,3000);
 camera.position.set(160,160,160) ## 相机位置
-## 相机观察目标lookAt()
+相机观察目标lookAt()
 camera.lookAt(mesh.position)
 
 ## 四：WebGL渲染器WebGLRenderer
 const renderer = new THREE.WebGLRenderer()
-## 设置Canvas画布尺寸.setSize()
+设置Canvas画布尺寸.setSize()
 renderer.setSize(width,height)
-## 渲染器渲染方法.render()
+渲染器渲染方法.render()
 renderer.render(scene,camera)
-## 渲染器Canvas画布属性.domElement
+渲染器Canvas画布属性.domElement
 
 document.getElementById('webgl').appendChild(renderer.domElement);
 ![image](https://user-images.githubusercontent.com/22109943/225823201-dcb03d2a-c9c0-45ba-adfb-13c83f3271b4.png)
