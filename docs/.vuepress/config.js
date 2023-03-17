@@ -34,7 +34,7 @@ module.exports = {
                 collapsable: false, // 不折叠
                 children: [
                     { title: "工程", path: "/note/javaPlugin" },
-                   
+                    { title: "工程", path: "/note/threejs入门" },
                 ],
             }
         ]
